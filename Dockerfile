@@ -15,10 +15,11 @@ RUN sed -i '$d' /etc/locale.gen \
     && /bin/bash -c "source /etc/default/locale" \
     && ln -sf  /usr/share/zoneinfo/Asia/Tokyo /etc/localtime \
 
-# Install JP Fonts
+# Install JP Fonts and others
   && apt-get update && apt-get install -y \
     fonts-ipaexfont \
-    fonts-noto-cjk  
+    fonts-noto-cjk \
+    tcl8.6-dev tk8.6-dev
 
 COPY install_packages.sh  /rocker_scripts/.
 RUN  /rocker_scripts/install_packages.sh
