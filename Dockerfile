@@ -1,4 +1,4 @@
-FROM rocker/verse:4.1.0
+FROM rocker/verse:4.1.1
 
 LABEL org.opencontainers.image.licenses="GPL-2.0-or-later" \
       org.opencontainers.image.source="https://github.com/rocker-org/rocker-versioned2" \
@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y \
     locales \
     tzdata \
     tcl8.6-dev tk8.6-dev \
+    libsecret-1-dev \
   && sed -i '$d' /etc/locale.gen \
   && echo "ja_JP.UTF-8 UTF-8" >> /etc/locale.gen \
   && locale-gen ja_JP.UTF-8 \
