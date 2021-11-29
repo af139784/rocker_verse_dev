@@ -10,7 +10,12 @@ install2.r  --error -r $CRAN --skipinstalled \
     ggridges \
     RColorBrewer \
     scales \
-    viridis 
+    viridis \
+    keyring \
+    blastula \
+    gt \
+    cronR \
+    shinyFiles
 
 install2.r  --error -r $CRAN --skipinstalled \
     flexdashboard \
@@ -61,6 +66,7 @@ install2.r  --error -r $CRAN --skipinstalled \
     pipeR \
     R.utils \
     UpSetR \
+    VennDiagram \
     colourpicker \
     patchwork \
     sodium \
