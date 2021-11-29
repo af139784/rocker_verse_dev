@@ -66,6 +66,7 @@ install2.r  --error -r $CRAN --skipinstalled \
     pipeR \
     R.utils \
     UpSetR \
+    VennDiagram \
     colourpicker \
     patchwork \
     sodium \
