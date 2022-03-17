@@ -17,7 +17,10 @@ RUN apt-get update && apt-get install -y \
     locales \
     tzdata \
     tcl8.6-dev tk8.6-dev \
-    libsecret-1-dev \
+    libssl-dev libsodium-dev libsecret-1-dev \
+    cron \
+    sqlite3 \
+    gzip \
   && sed -i '$d' /etc/locale.gen \
   && echo "ja_JP.UTF-8 UTF-8" >> /etc/locale.gen \
   && locale-gen ja_JP.UTF-8 \
